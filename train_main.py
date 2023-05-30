@@ -17,7 +17,6 @@ from local_unsupervised import UnsupervisedLocalUpdate
 from torch.utils.data import DataLoader
 
 args = args_parser()
-os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
 
 def split(dataset, num_users):
