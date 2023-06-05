@@ -7,20 +7,29 @@ Pytorch implementation for MICCAI 2021 paper "Federated Semi-supervised Medical 
 
 ![](figure/miccai2021_fedirm.png)
 ## Usage
-1. create conda environment
+1. Clone the repository and go to the repository root directory:
 
-       conda create -f environment.yml
+       git clone https://github.com/ysntrkc/FedIRM.git
+       cd FedIRM
+
+2. Create a conda environment and activate it:
+
+       conda env create -f environment.yml
        conda activate fedIRM
 
-2. Install dependencies:
+3. Download datasets from following sources:
+   1. [ISIC 2019 (Kaggle)](https://www.kaggle.com/datasets/andrewmvd/isic-2019)
+   2. [HAM10000 (Kaggle)](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000)
+   3. [RSNA Intracranial Hemorrhage Detection (drive)](https://drive.google.com/drive/folders/1bhe_0KvdxEli7-6ZrQ9ahaDPpSnvF4UW?usp=share_link)
 
-   1. install pytorch==1.8.0 torchvision==0.9.0 (via conda, recommend)
+4. Extract the datasets to `data/` folder and place the content into folders like this:
+   1. ISIC 2019: `data/isic2019/`
+   2. HAM10000: `data/ham10000/`
+   3. RSNA Intracranial Hemorrhage Detection: `data/rsna/`
 
-3. download the dataset from [kaggle](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection) and preprocess it follow this [notebook](https://www.kaggle.com/guiferviz/prepare-dataset-resizing-and-saving-as-png). You can download the preprocessed the dataset from [notebook](https://drive.google.com/drive/folders/1bhe_0KvdxEli7-6ZrQ9ahaDPpSnvF4UW?usp=share_link).
+5. Go to data folder from terminal with `cd data` and run `python prepare_data.py` to prepare the datasets.
 
-5. modify the corresponding data path in options.py
-
-4. train the model
+6. train the model
 
        python train_main.py
 ## Citation
