@@ -15,7 +15,7 @@ def args_parser():
         "--dataset",
         type=str,
         default="isic2019",
-        choices=["ham10000", "brain", "isic2019"],
+        choices=["ham10000", "rsna", "isic2019"],
         help="name of dataset",
     )
     parser.add_argument(
@@ -93,7 +93,7 @@ def args_parser():
             )
             args.csv_file_test = "/media/undergrad/Data/tubitak-data/isic2019/test.csv"
             args.num_classes = 8
-        case "brain":
+        case "rsna":
             args.root_path = "/media/undergrad/Data/tubitak-data/brain/RSNA-ICH/organized/stage_2_train"
             args.csv_file_train = (
                 "/media/undergrad/Data/tubitak-data/brain/RSNA-ICH/training.csv"

@@ -24,7 +24,7 @@ match args.dataset:
         CLASS_NAMES = ["MEL", "NV", "BCC", "AKIEC", "BKL", "DF", "VASC", "SCC"]
     case "ham10000":
         CLASS_NAMES = ["akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"]
-    case "brain":
+    case "rsna":
         CLASS_NAMES = [
             "Melanoma",
             "Melanocytic nevus",
