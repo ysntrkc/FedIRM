@@ -1,6 +1,8 @@
 # Federated Semi-supervised Medical Image Classification via Inter-client Relation Matching
 by [Quande Liu](https://github.com/liuquande), [Hongzheng Yang](https://github.com/HongZhengYang), [Qi Dou](http://www.cse.cuhk.edu.hk/~qdou/), [Pheng-Ann Heng](http://www.cse.cuhk.edu.hk/~pheng/).
 
+Edited by [Yasin Tarakçı](github.com/ysntrkc)
+
 ## Introduction
 
 Pytorch implementation for MICCAI 2021 paper "Federated Semi-supervised Medical Image Classification via Inter-client Relation Matching"
@@ -50,3 +52,5 @@ If this repository is useful for your research, please cite:
 ### Questions
 
 Please contact 'qdliu0226@gmail.com' or 'hzyang05@gmail.com'
+
+If you have questions about this version of the code, you can also contact 'yasintarakci42@gmail.com'
