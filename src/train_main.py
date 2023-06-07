@@ -219,7 +219,6 @@ if __name__ == "__main__":
         with torch.no_grad():
             print("begin fedavg")
             w_glob = FedAvg(w_locals)
-            print(w_glob.keys())
 
         net_glob.load_state_dict(w_glob)
         for i in supervised_user_id:
