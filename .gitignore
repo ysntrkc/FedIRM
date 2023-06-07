@@ -1,6 +1,7 @@
 *.pyc
 *.zip
 
-data/rsna/
-data/ham10000/
-data/isic2019/
+data/*/
+logs/
+model/
+test_csv/
