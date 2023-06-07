@@ -1,7 +1,7 @@
 # Federated Semi-supervised Medical Image Classification via Inter-client Relation Matching
 by [Quande Liu](https://github.com/liuquande), [Hongzheng Yang](https://github.com/HongZhengYang), [Qi Dou](http://www.cse.cuhk.edu.hk/~qdou/), [Pheng-Ann Heng](http://www.cse.cuhk.edu.hk/~pheng/).
 
-Edited by [Yasin Tarakçı](github.com/ysntrkc)
+Edited by [Yasin Tarakçı](https://github.com/ysntrkc)
 
 ## Introduction
 
