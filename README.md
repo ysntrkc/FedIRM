@@ -6,7 +6,7 @@ by [Quande Liu](https://github.com/liuquande), [Hongzheng Yang](https://github.c
 Pytorch implementation for MICCAI 2021 paper "Federated Semi-supervised Medical Image Classification via Inter-client Relation Matching"
 
 ![](figure/miccai2021_fedirm.png)
-## Usage
+## Prepare the repository and datasets
 1. Clone the repository and go to the repository root directory:
 
        git clone https://github.com/ysntrkc/FedIRM.git
@@ -29,9 +29,13 @@ Pytorch implementation for MICCAI 2021 paper "Federated Semi-supervised Medical 
 
 5. Go to data folder from terminal with `cd data` and run `python prepare_data.py` to prepare the datasets.
 
-6. train the model
+## Run the code
+1. Go to the `src` folder with `cd src` and run `python main.py` to train the model.
 
-       python train_main.py
+2. You can see the different options in `src/options.py` and change the parameters as you want.
+
+3. You can see the example run commands in `src/example_run.sh` file.
+
 ## Citation
 
 If this repository is useful for your research, please cite:
