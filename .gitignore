@@ -5,3 +5,5 @@ data/*/
 logs/
 model/
 test_csv/
+
+script/

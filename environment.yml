@@ -9,8 +9,8 @@ dependencies:
   - blas=1.0=mkl
   - brotlipy=0.7.0=py310h7f8727e_1002
   - bzip2=1.0.8=h7b6447c_0
-  - ca-certificates=2023.01.10=h06a4308_0
-  - certifi=2022.12.7=py310h06a4308_0
+  - ca-certificates=2023.05.30=h06a4308_0
+  - certifi=2023.5.7=py310h06a4308_0
   - cffi=1.15.1=py310h5eee18b_3
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - cryptography=38.0.4=py310h9ce1e76_0
@@ -101,9 +101,11 @@ dependencies:
   - numpy=1.23.5=py310hd5efca6_0
   - numpy-base=1.23.5=py310h8e6c178_0
   - openh264=2.1.1=h4ff587b_0
-  - openssl=1.1.1s=h7f8727e_0
+  - openssl=1.1.1u=h7f8727e_0
+  - pexpect=4.8.0=pyhd3eb1b0_3
   - pillow=9.3.0=py310hace64e9_1
   - pip=22.3.1=py310h06a4308_0
+  - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pycparser=2.21=pyhd3eb1b0_0
   - pyopenssl=22.0.0=pyhd3eb1b0_0
   - pysocks=1.7.1=py310h06a4308_0

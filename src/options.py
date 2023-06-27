@@ -44,7 +44,7 @@ def args_parser():
         default=8,
         help="number of classes",
     )
-    parser.add_argument("--batch_size", type=int, default=24, help="batch_size per gpu")
+    parser.add_argument("--batch_size", type=int, default=48, help="batch_size per gpu")
     parser.add_argument("--drop_rate", type=int, default=0.2, help="dropout rate")
     parser.add_argument(
         "--ema_consistency", type=int, default=1, help="whether train baseline model"
@@ -60,9 +60,9 @@ def args_parser():
     )
     parser.add_argument("--seed", type=int, default=1337, help="random seed")
     parser.add_argument("--gpu", type=str, default="0", help="GPU to use")
-    parser.add_argument("--local_ep", type=int, default=1, help="local epoch")
+    parser.add_argument("--local_ep", type=int, default=5, help="local epoch")
     parser.add_argument("--num_users", type=int, default=10, help="local epoch")
-    parser.add_argument("--rounds", type=int, default=101, help="local epoch")
+    parser.add_argument("--rounds", type=int, default=50, help="local epoch")
 
     ### tune
     parser.add_argument("--resume", type=str, default=None, help="model to resume")
@@ -82,6 +82,8 @@ def args_parser():
     args.root_path = os.path.join("..", "data", args.dataset, "images")
     args.csv_file_train = os.path.join("..", "data", args.dataset, "train.csv")
     args.csv_file_test = os.path.join("..", "data", args.dataset, "test.csv")
+
+    args.rounds += 1
 
     match args.dataset:
         case "ham10000":

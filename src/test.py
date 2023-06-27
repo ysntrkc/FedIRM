@@ -14,7 +14,7 @@ import pandas as pd
 
 args = args_parser()
 
-checkpoint_path = os.path.join("..", "model", f"{args.dataset}_{args.mode}", "epoch_100.pth")
+checkpoint_path = os.path.join("..", "model", f"{args.dataset}_{args.mode}", "epoch_50.pth")
 
 if __name__ == "__main__":
     checkpoint = torch.load(checkpoint_path)
